@@ -7,5 +7,5 @@ def generate_code():
 
 def generate_invite_code():
 
-    symbols = string.ascii_letters + '0123456789'
+    symbols = string.ascii_letters + string.digits
     return ''.join(random.choice(symbols) for i in range(6))
